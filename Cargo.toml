@@ -1,0 +1,3 @@
+[workspace]    
+members = ["mlir-rs", "mlir-impl-macros-rs", "mlir-capi-extra-rs"]
+resolver = "2"
