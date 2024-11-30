@@ -1,0 +1,12 @@
+[package]
+name = "mlir-impl-macros"
+description = "Macros for mlir-rs internal impl only"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2"
+proc-macro2 = "1"
+quote = "1"
