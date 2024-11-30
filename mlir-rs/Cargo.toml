@@ -1,0 +1,18 @@
+[package]
+name = "mlir-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mlir-capi = { git = "https://github.com/lijinpei/mlir-capi-rs.git" }
+mlir-capi-extra = { path = "../mlir-capi-extra-rs/" }
+mlir-impl-macros = { path = "../mlir-impl-macros-rs/" }
+strum = { version = "=0.26.3", features = ["derive"]}
+
+[[bin]]
+name = "test_attribute"
+path = "bin/tests/attribute/main.rs"
+
+[[bin]]
+name = "test_type"
+path = "bin/tests/type/main.rs"
